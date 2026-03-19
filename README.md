@@ -1,5 +1,11 @@
 # Minimalist & Elegant Packing App
 
+
+TO RUN
+cd "C:\Users\dfitc\packing-app\stitch-export"
+python -m http.server 5173 --bind 127.0.0.1
+
+
 ## Pitch
 An elegant packing companion that curates bespoke checklists based on destination climate and travel intent. It eliminates the chaos of pre-trip preparation, so travelers can focus on the journey ahead.
 
