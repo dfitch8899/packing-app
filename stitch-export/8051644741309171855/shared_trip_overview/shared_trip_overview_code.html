@@ -113,7 +113,7 @@
 <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>
 <div class="absolute bottom-10 left-6 lg:left-12">
 <span class="text-xs font-label tracking-[0.2em] uppercase text-on-surface/70 mb-2 block">Group Expedition</span>
-<h2 class="text-5xl md:text-6xl font-headline tracking-tighter text-primary">Tuscany Retreat 2024</h2>
+<h2 id="packingapp-sharedTripTitle" class="text-5xl md:text-6xl font-headline tracking-tighter text-primary">Tuscany Retreat 2024</h2>
 </div>
 </header>
 <div class="px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -121,9 +121,9 @@
 <section class="lg:col-span-7">
 <div class="flex items-baseline justify-between mb-8 border-b border-outline/50 pb-4">
 <h3 class="text-2xl font-headline text-primary">Participant Readiness</h3>
-<span class="text-[10px] font-label tracking-widest uppercase text-secondary">4 Travelers</span>
+<span id="packingapp-participantsCount" class="text-[10px] font-label tracking-widest uppercase text-secondary">4 Travelers</span>
 </div>
-<div class="space-y-10">
+<div id="packingapp-sharedParticipantsList" class="space-y-10">
 <!-- Alice -->
 <div class="group">
 <div class="flex justify-between items-end mb-3">
@@ -178,11 +178,11 @@
 </div>
 </div>
 <div class="mt-16 flex flex-col md:flex-row gap-4">
-<button class="bg-primary text-white font-label text-xs tracking-[0.2em] uppercase px-10 py-5 transition-all hover:bg-on-tertiary-container active:scale-95 flex items-center justify-center gap-3">
+<button id="packingapp-messageGroupBtn" class="bg-primary text-white font-label text-xs tracking-[0.2em] uppercase px-10 py-5 transition-all hover:bg-on-tertiary-container active:scale-95 flex items-center justify-center gap-3">
 <span class="material-symbols-outlined text-sm" data-icon="chat_bubble">chat_bubble</span>
                         Message Group
                     </button>
-<button class="border border-primary text-primary font-label text-xs tracking-[0.2em] uppercase px-10 py-5 transition-all hover:bg-surface-container active:scale-95">
+<button id="packingapp-sendReminderBtn" class="border border-primary text-primary font-label text-xs tracking-[0.2em] uppercase px-10 py-5 transition-all hover:bg-surface-container active:scale-95">
                         Send Reminder
                     </button>
 </div>
@@ -191,7 +191,7 @@
 <aside class="lg:col-span-5">
 <div class="bg-surface-bright p-8 lg:p-12 border border-outline/30 shadow-sm">
 <h3 class="text-2xl font-headline text-primary mb-8 border-b border-outline/50 pb-4">Common Items</h3>
-<ul class="space-y-6">
+<ul id="packingapp-commonItemsList" class="space-y-6">
 <li class="flex items-start gap-4 group">
 <span class="material-symbols-outlined text-tertiary mt-1" data-icon="medical_services">medical_services</span>
 <div class="flex-1 border-b border-outline/30 pb-4">
@@ -233,7 +233,7 @@
 </div>
 </li>
 </ul>
-<button class="w-full mt-10 py-4 border-t border-outline/50 flex items-center justify-center gap-2 text-secondary hover:text-primary transition-colors font-label text-[10px] tracking-widest uppercase">
+<button id="packingapp-addSharedRequirementBtn" class="w-full mt-10 py-4 border-t border-outline/50 flex items-center justify-center gap-2 text-secondary hover:text-primary transition-colors font-label text-[10px] tracking-widest uppercase">
 <span class="material-symbols-outlined text-sm" data-icon="add">add</span>
                         Add Shared Requirement
                     </button>
@@ -253,4 +253,9 @@
 <span class="material-symbols-outlined" data-icon="settings">settings</span>
 </a>
 </nav>
+<script src="../uiContract.js"></script>
+<script src="../storage.js"></script>
+<script src="../mockApi.js"></script>
+<script src="../apiClient.js"></script>
+<script src="../appBootstrap.js"></script>
 </body></html>

@@ -118,8 +118,10 @@
 <h2 class="font-headline text-5xl md:text-6xl text-primary leading-tight tracking-tight mb-6">The quiet art of disappearing.</h2>
 <p class="font-body text-lg text-secondary leading-relaxed">A curated collection of destinations designed for reflection, where architecture meets the raw edge of the world.</p>
 </section>
-<!-- Bento Grid Layout for Photography -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Destination Grid (rendered from Inspiration[]) -->
+<div id="packingapp-inspirationGrid" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
+<!-- Bento Grid Layout for Photography (static fallback; hidden when JS runs) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 hidden">
 <!-- Large Focus Item -->
 <div class="md:col-span-8 group relative overflow-hidden bg-surface-container h-[600px]">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist coastal architecture with clean concrete lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGqTOFDkZxvqoWTVoTcVrX48jOJqP-qPg6hrYHOr0qfQgOtY8ZrcnauS6ohOo6PCXSgbqfxjeIl_iMSMtBiNxNyDWiSsInD3LTk049FrRYaU8zFHpEeQH6BGZNPgYPCLTi0i_LoI1Ak528jKzUoPsHlUoCnEm0QTdBSFdegRHk-JP20swFJ7d-RcsjDTgcNAndJ5nH-tYBeQCPltdxI1lz8ZA1L94DBCR3-nt5Zoquqts78M8LtIQjpIq29fIzBdLJfZ7Ja_ehBEA"/>
@@ -192,8 +194,8 @@
 <h3 class="font-headline text-4xl text-primary mb-4">Ready for your next chapter?</h3>
 <p class="font-body text-secondary mb-10">Select a destination to begin your personalized packing itinerary.</p>
 <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-<button class="bg-primary text-white font-label text-[14px] tracking-[0.2em] uppercase px-12 py-5 hover:bg-primary-dim transition-all">Start Planning</button>
-<button class="border border-outline text-primary font-label text-[14px] tracking-[0.2em] uppercase px-12 py-5 hover:bg-surface-container transition-all">View All Destinations</button>
+<button id="packingapp-startPlanningBtn" class="bg-primary text-white font-label text-[14px] tracking-[0.2em] uppercase px-12 py-5 hover:bg-primary-dim transition-all">Start Planning</button>
+<button id="packingapp-viewAllDestinationsBtn" class="border border-outline text-primary font-label text-[14px] tracking-[0.2em] uppercase px-12 py-5 hover:bg-surface-container transition-all">View All Destinations</button>
 </div>
 </section>
 </main>
@@ -211,4 +213,9 @@
 </a>
 </div>
 </nav>
+<script src="../uiContract.js"></script>
+<script src="../storage.js"></script>
+<script src="../mockApi.js"></script>
+<script src="../apiClient.js"></script>
+<script src="../appBootstrap.js"></script>
 </body></html>

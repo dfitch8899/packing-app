@@ -73,25 +73,25 @@
 <!-- Header -->
 <header class="sticky top-0 z-20 bg-background-light/95 backdrop-blur-sm pt-12 pb-4 px-6">
 <div class="flex items-center justify-between mb-2">
-<button class="flex items-center text-text-main h-10 w-10 -ml-2 rounded-full hover:bg-black/5 transition-colors">
+<button id="packingapp-backToHome" class="flex items-center text-text-main h-10 w-10 -ml-2 rounded-full hover:bg-black/5 transition-colors">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
 </button>
 <div class="w-10"></div>
 </div>
-<h1 class="font-heading text-[36px] text-text-main leading-tight tracking-tight">Kyoto</h1>
-<p class="text-muted text-[14px] font-normal tracking-wide mt-1">OCT 12 - 24</p>
+<h1 id="packingapp-checklistTitle" class="font-heading text-[36px] text-text-main leading-tight tracking-tight">Kyoto</h1>
+<p id="packingapp-checklistDateRange" class="text-muted text-[14px] font-normal tracking-wide mt-1">OCT 12 - 24</p>
 </header>
 <main class="flex-1">
 <!-- Hero Image Area -->
 <div class="px-6 mb-6">
 <div class="w-full h-32 rounded-lg overflow-hidden relative">
-<img alt="Kyoto landscape" class="w-full h-full object-cover object-[center_70%] opacity-80 grayscale-[0.2] contrast-[0.9]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfTWWPe1WATEsIbvMuNLrp6c4N-nbrkTxiDbDRnCedxV4mmA5PhB9-bwy2hDBUeDzvn42ldfdTfNvyLK4hT_EkcPCyr-NpmI_GQVI2ZYeGEkDfPG3rt7nHPTVhxS5poqDewCGM4hPiJpdZeqcW6AXaEPMoeY_HZyYbg5yDf_fgHapkjR5N_3Le2rGY8M7J-vIutgM2uiYzUSoNDZTz7iXXWnbd_hNi4blPtiKVRY6fWOE1frNDSEKr8K2ssbHIcAKpTwIx6ApuyEs"/>
+<img id="packingapp-checklistHeroImage" alt="Kyoto landscape" class="w-full h-full object-cover object-[center_70%] opacity-80 grayscale-[0.2] contrast-[0.9]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfTWWPe1WATEsIbvMuNLrp6c4N-nbrkTxiDbDRnCedxV4mmA5PhB9-bwy2hDBUeDzvn42ldfdTfNvyLK4hT_EkcPCyr-NpmI_GQVI2ZYeGEkDfPG3rt7nHPTVhxS5poqDewCGM4hPiJpdZeqcW6AXaEPMoeY_HZyYbg5yDf_fgHapkjR5N_3Le2rGY8M7J-vIutgM2uiYzUSoNDZTz7iXXWnbd_hNi4blPtiKVRY6fWOE1frNDSEKr8K2ssbHIcAKpTwIx6ApuyEs"/>
 <div class="absolute inset-0 bg-black/5"></div>
 </div>
 </div>
 <!-- Weather Summary Widget -->
 <div class="px-6 mb-8">
-<a class="flex items-center justify-between p-4 bg-surface border border-border-thin rounded-xl hover:border-primary/30 transition-all group" href="#">
+<a id="packingapp-weatherLink" class="flex items-center justify-between p-4 bg-surface border border-border-thin rounded-xl hover:border-primary/30 transition-all group" href="#">
 <div class="flex items-center gap-4">
 <div class="text-primary">
 <span class="material-symbols-outlined text-[28px]">rainy</span>
@@ -106,7 +106,7 @@
 </div>
 <!-- Category Navigation -->
 <div class="sticky top-[156px] z-10 bg-background-light border-b border-border-thin">
-<nav class="flex overflow-x-auto hide-scrollbar px-6 h-12">
+<nav id="packingapp-categoryNav" class="flex overflow-x-auto hide-scrollbar px-6 h-12">
 <button class="whitespace-nowrap px-1 py-3 text-[14px] text-text-main font-semibold border-b-2 border-text-main mr-8 uppercase tracking-widest">
                 Clothing
             </button>
@@ -123,7 +123,7 @@
 </div>
 <!-- Checklist Content -->
 <div class="px-6 py-4 pb-24">
-<div class="space-y-0">
+<div id="packingapp-checklistItems" class="space-y-0">
 <!-- Item 1 -->
 <label class="checklist-item flex items-center justify-between h-16 border-b border-border-thin cursor-pointer group">
 <div class="flex items-center gap-4 flex-1">
@@ -203,10 +203,15 @@
 <span class="text-[12px] text-muted font-normal tracking-wider">x8</span>
 </label>
 </div>
-<button class="mt-10 flex items-center gap-3 text-[13px] text-muted hover:text-text-main uppercase tracking-[0.15em] transition-colors font-medium">
+<button id="packingapp-addCustomItemBtn" class="mt-10 flex items-center gap-3 text-[13px] text-muted hover:text-text-main uppercase tracking-[0.15em] transition-colors font-medium">
 <span class="material-symbols-outlined text-[20px]">add</span>
             Add Custom Item
         </button>
 </div>
 </main>
+<script src="../uiContract.js"></script>
+<script src="../storage.js"></script>
+<script src="../mockApi.js"></script>
+<script src="../apiClient.js"></script>
+<script src="../appBootstrap.js"></script>
 </body></html>
