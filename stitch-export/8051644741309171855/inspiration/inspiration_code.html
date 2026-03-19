@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#8D978F",
+              "secondary-fixed-dim": "#EBEAE8",
+              "outline": "#E5E4E2",
+              "tertiary": "#D4C5B9",
+              "surface-container-high": "#EBEAE8",
+              "on-tertiary": "#1A1D1A",
+              "on-secondary": "#FFFFFF",
+              "surface-variant": "#F2F1EF",
+              "inverse-primary": "#F9F8F6",
+              "on-surface": "#1A1D1A",
+              "on-tertiary-fixed-variant": "#D4C5B9",
+              "tertiary-dim": "#49583a",
+              "on-secondary-fixed": "#1A1D1A",
+              "primary-container": "#D4C5B9",
+              "tertiary-container": "#F2F1EF",
+              "on-primary-container": "#1A1D1A",
+              "on-primary-fixed": "#1A1D1A",
+              "secondary-dim": "#505452",
+              "primary-dim": "#4b5450",
+              "on-primary-fixed-variant": "#2C3531",
+              "surface-dim": "#E5E4E2",
+              "on-tertiary-container": "#2C3531",
+              "surface": "#F9F8F6",
+              "surface-container-low": "#F9F8F6",
+              "surface-container-highest": "#E5E4E2",
+              "primary": "#2C3531",
+              "secondary-container": "#E5E4E2",
+              "inverse-surface": "#2C3531",
+              "surface-container": "#F2F1EF",
+              "secondary": "#8D978F",
+              "on-primary": "#FFFFFF",
+              "primary-fixed-dim": "#D4C5B9",
+              "on-background": "#1A1D1A",
+              "outline-variant": "#D4C5B9",
+              "on-error-container": "#410002",
+              "on-secondary-container": "#1A1D1A",
+              "tertiary-fixed": "#F9F8F6",
+              "error-dim": "#4e0309",
+              "primary-fixed": "#E5E4E2",
+              "surface-tint": "#2C3531",
+              "inverse-on-surface": "#F9F8F6",
+              "error-container": "#FFDAD6",
+              "on-tertiary-fixed": "#1A1D1A",
+              "tertiary-fixed-dim": "#F2F1EF",
+              "surface-container-lowest": "#FFFFFF",
+              "background": "#F9F8F6",
+              "on-error": "#FFFFFF",
+              "error": "#BA1A1A",
+              "secondary-fixed": "#F2F1EF",
+              "surface-bright": "#FFFFFF",
+              "on-surface-variant": "#8D978F"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        body {
+            background-color: #F9F8F6;
+            color: #1A1D1A;
+            -webkit-font-smoothing: antialiased;
+        }
+        .editorial-shadow {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+        }
+        .glass-overlay {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-tertiary/30">
+<!-- Top Navigation Anchor -->
+<header class="w-full top-0 sticky z-40 bg-[#F9F8F6] dark:bg-stone-900 border-b border-stone-200/50 dark:border-stone-800/50 flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#2C3531] dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors p-2 active:opacity-70">arrow_back</button>
+<h1 class="font-serif text-xl font-bold text-[#2C3531] dark:text-stone-100 tracking-tight">Packing List</h1>
+</div>
+<div class="flex items-center gap-6">
+<span class="font-serif text-2xl tracking-tight text-[#2C3531] dark:text-stone-100">Inspirations</span>
+</div>
+<button class="material-symbols-outlined text-[#2C3531] dark:text-stone-100 p-2">more_vert</button>
+</header>
+<main class="max-w-screen-xl mx-auto px-6 py-12 mb-24">
+<!-- Hero Section: Curated Title -->
+<section class="mb-20 text-center md:text-left max-w-2xl">
+<span class="text-[12px] font-sans tracking-[0.2em] uppercase text-secondary mb-4 block">Volume IV · Spring 2024</span>
+<h2 class="font-headline text-5xl md:text-6xl text-primary leading-tight tracking-tight mb-6">The quiet art of disappearing.</h2>
+<p class="font-body text-lg text-secondary leading-relaxed">A curated collection of destinations designed for reflection, where architecture meets the raw edge of the world.</p>
+</section>
+<!-- Bento Grid Layout for Photography -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Focus Item -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container h-[600px]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist coastal architecture with clean concrete lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGqTOFDkZxvqoWTVoTcVrX48jOJqP-qPg6hrYHOr0qfQgOtY8ZrcnauS6ohOo6PCXSgbqfxjeIl_iMSMtBiNxNyDWiSsInD3LTk049FrRYaU8zFHpEeQH6BGZNPgYPCLTi0i_LoI1Ak528jKzUoPsHlUoCnEm0QTdBSFdegRHk-JP20swFJ7d-RcsjDTgcNAndJ5nH-tYBeQCPltdxI1lz8ZA1L94DBCR3-nt5Zoquqts78M8LtIQjpIq29fIzBdLJfZ7Ja_ehBEA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full md:w-2/3">
+<div class="glass-overlay p-8 border-l-4 border-primary">
+<span class="text-[10px] tracking-[0.3em] font-sans uppercase text-secondary mb-2 block">Destination 01</span>
+<h3 class="font-headline text-3xl text-primary mb-3">Naoshima, Japan</h3>
+<p class="font-body text-sm italic text-secondary-dim leading-relaxed mb-6">Where the concrete breathes with the tide, and art becomes a permanent resident of the soul.</p>
+<div class="flex items-center gap-4">
+<button class="font-label text-[12px] tracking-widest uppercase py-3 px-6 bg-primary text-white hover:bg-primary/90 transition-colors">Explore Archive</button>
+<span class="h-[1px] w-12 bg-outline"></span>
+<span class="text-[10px] font-sans tracking-widest text-secondary">VIEW MAP</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Vertical Secondary Item -->
+<div class="md:col-span-4 group relative overflow-hidden bg-surface-container h-[600px]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Ethereal misty mountains in northern scandinavia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN4RBPqH3HktVs4uLLYwimw3XLoriL1UOGpczCrbG0Pe01ewwgWXeMkYsFxmY6SW2opJdLKRoQTi1cSwZHldqBF1MUQMrv9Fl-HZhXSLm73A4jehYWG7WSbogb1I1C55W-aAnAYDio_XolmkRpJSGNOPRW2lvfW5OUnSc-h_tunArieNEoApf-hWMG7DFgDSLxP1sRGlpekizv2p_EqqNol4I9YZq0ewZeL_lHCcUSn_CyJfmKiOHCqLspxjwrBnwenvjTfYkqY0k"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-transparent opacity-40"></div>
+<div class="absolute top-10 right-0 p-8 text-right">
+<div class="bg-surface/90 backdrop-blur-md p-6 inline-block">
+<span class="text-[10px] tracking-[0.3em] font-sans uppercase text-primary mb-1 block">The North</span>
+<h3 class="font-headline text-2xl text-primary italic">Lofoten</h3>
+</div>
+</div>
+<div class="absolute bottom-10 left-10 right-10">
+<div class="p-6 bg-white/10 backdrop-blur-sm border border-white/20 text-white">
+<p class="font-body text-sm leading-relaxed">Chasing the pale blue hour across granite peaks and emerald fjords.</p>
+</div>
+</div>
+</div>
+<!-- Asymmetric Trio Row -->
+<div class="md:col-span-4 h-[400px] relative overflow-hidden group">
+<div class="absolute inset-0 bg-[#EBEAE8] flex items-center justify-center">
+<span class="font-headline text-8xl text-surface-container-highest select-none">03</span>
+</div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<span class="text-[10px] tracking-[0.3em] font-sans uppercase text-secondary mb-2 block">Curation</span>
+<h3 class="font-headline text-2xl text-primary mb-2">The Alabaster Coast</h3>
+<p class="font-body text-[13px] text-secondary-dim max-w-[200px]">Cliffs of silence bordering the English Channel.</p>
+</div>
+</div>
+<div class="md:col-span-4 h-[400px] border-l border-outline/50 px-8 flex flex-col justify-center">
+<blockquote class="font-headline text-2xl italic text-primary-dim leading-snug mb-6">
+                    "Travel is the only thing you buy that makes you richer in absence."
+                </blockquote>
+<div class="flex items-center gap-3">
+<span class="w-6 h-[1px] bg-tertiary"></span>
+<span class="text-[10px] font-sans tracking-widest uppercase text-secondary">The Editorial Team</span>
+</div>
+</div>
+<div class="md:col-span-4 h-[400px] bg-secondary-container/30 group relative">
+<div class="p-10 flex flex-col h-full justify-between">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<span class="text-[12px] font-sans tracking-widest text-secondary">NEW COLLECTION</span>
+</div>
+<div>
+<h4 class="font-headline text-2xl text-primary mb-4">Desert Minimal</h4>
+<p class="font-body text-sm text-secondary leading-relaxed mb-6">Discover the architectural wonders hidden within the shifting sands of Namibia.</p>
+<a class="inline-block border-b border-primary text-[11px] font-sans tracking-[0.2em] uppercase text-primary pb-1 hover:text-tertiary hover:border-tertiary transition-all" href="#">View Series</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<section class="mt-32 pt-20 border-t border-outline/30 text-center">
+<h3 class="font-headline text-4xl text-primary mb-4">Ready for your next chapter?</h3>
+<p class="font-body text-secondary mb-10">Select a destination to begin your personalized packing itinerary.</p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6">
+<button class="bg-primary text-white font-label text-[14px] tracking-[0.2em] uppercase px-12 py-5 hover:bg-primary-dim transition-all">Start Planning</button>
+<button class="border border-outline text-primary font-label text-[14px] tracking-[0.2em] uppercase px-12 py-5 hover:bg-surface-container transition-all">View All Destinations</button>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 w-full z-50 pb-8 pt-12 bg-gradient-to-t from-[#F9F8F6] via-[#F9F8F6] to-transparent">
+<div class="max-w-md mx-auto flex justify-around items-center px-12">
+<a class="flex flex-col items-center justify-center text-[#2C3531]/60 p-4 hover:text-[#D4C5B9] transition-colors scale-95 duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#2C3531] text-white rounded-none p-4 scale-95 duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2C3531]/60 p-4 hover:text-[#D4C5B9] transition-colors scale-95 duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined">settings</span>
+</a>
+</div>
+</nav>
+</body></html>

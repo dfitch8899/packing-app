@@ -1,0 +1,99 @@
+{
+  "project": {
+    "id": "8051644741309171855",
+    "title": "Minimalist & Elegant Packing App - PRD"
+  },
+  "screens": [
+    {
+      "id": "3432d66c1c4b4864ac872187e4392f2f",
+      "title": "Weather Forecast",
+      "deviceType": "MOBILE",
+      "size": { "width": 780, "height": 4530 },
+      "hosted": {
+        "screenshotDownloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uiT3chHnzcRmJUHB7zISO6_XN4It7rajQYrm5hQTpm1SmIYDL8Gbg0k_nT9NmFrcMYGsFH9g-CO6DcFXm1sU74loY2vOYzf5HHy4fdVlQaeDPiv7Py2foBxaNKwkfUpNztjfmtrwRARvnhmFn01q4Hj6wRlmRHarUVhe2NOT9f3WdwKSNPmAyD32QngcsxQ4So7yVcTAJSEQnB7Ylf5DHVIApBfK7h1ufSgAtrrBZfcqAYOcXlZyYsSKM8",
+        "htmlCodeDownloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzY0NTM5NjU5MmNiNjQyNzM4YjdmNWNiODRmMjdjNTc5EgsSBxCy84aG7wsYAZIBIwoKcHJvamVjdF9pZBIVQhM4MDUxNjQ0NzQxMzA5MTcxODU1&filename=&opi=89354086"
+      },
+      "local": {
+        "folder": "stitch-export/8051644741309171855/weather_forecast",
+        "screenshotPath": "stitch-export/8051644741309171855/weather_forecast/weather_forecast_screenshot.png",
+        "codePath": "stitch-export/8051644741309171855/weather_forecast/weather_forecast_code.html"
+      }
+    },
+    {
+      "id": "49db9881a87f46759c7011e638e15c81",
+      "title": "Inspiration",
+      "deviceType": "MOBILE",
+      "size": { "width": 780, "height": 7410 },
+      "hosted": {
+        "screenshotDownloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uinjEtNpylSiArMPbXz4wYytTNJsT5iczyXodKQXp7mMXDXyJ8r65vOZekdOavI5XPfrDY6gbipsO-k2SFUjIEiKnnfkqWbi1rVNhmdSQkFfGRx8tAVDOHZSchg1ziOYWQHqsrbcLk7Ytu5l71gRKwZA4dWn7b2CEzftRiXdTdPboVzo2XAXhxzz8DooolT_jxxqFFd3nQ6XmF3Sp_qxA5CU5N-Y4XGOdyf9Id3QBNojzffAJzq7uZm43w",
+        "htmlCodeDownloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzkxYjdlNzBmYjgxYTRjM2U4MzdkMGU2MWNkZWM0NzExEgsSBxCy84aG7wsYAZIBIwoKcHJvamVjdF9pZBIVQhM4MDUxNjQ0NzQxMzA5MTcxODU1&filename=&opi=89354086"
+      },
+      "local": {
+        "folder": "stitch-export/8051644741309171855/inspiration",
+        "screenshotPath": "stitch-export/8051644741309171855/inspiration/inspiration_screenshot.png",
+        "codePath": "stitch-export/8051644741309171855/inspiration/inspiration_code.html"
+      }
+    },
+    {
+      "id": "668cd3a246d2478f83ccbbad43968dda",
+      "title": "Checklist - Enhanced",
+      "deviceType": "MOBILE",
+      "size": { "width": 780, "height": 1966 },
+      "hosted": {
+        "screenshotDownloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uibDxprtKTURc9tFnuiaFEqoXIxBSPLwr8-UhiD8_yGjREkGteRza-qPTf1EcKxG3tRMLeu1WfCEMzRl1rkZWJ9EirQlMLaIZnea7RLc-96bwR-fpVoSwg9yqIpBJM4AI69UrHPCXTHPQMpzG74OCn6TyY3CMPYuGGcjFLzebwQg_0U4I1k3iRdsU9hbL_xsQbi1FOuqT7d4REqpoyjy7t-_U7E5If3PcuUSg7LW5TsXNPx0OVM6M0HYg",
+        "htmlCodeDownloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzZjMGRhMzI4Mzk3MTRlYWE4Y2YzMWQ0M2FiN2UyY2YwEgsSBxCy84aG7wsYAZIBIwoKcHJvamVjdF9pZBIVQhM4MDUxNjQ0NzQxMzA5MTcxODU1&filename=&opi=89354086"
+      },
+      "local": {
+        "folder": "stitch-export/8051644741309171855/checklist_enhanced",
+        "screenshotPath": "stitch-export/8051644741309171855/checklist_enhanced/checklist_enhanced_screenshot.png",
+        "codePath": "stitch-export/8051644741309171855/checklist_enhanced/checklist_enhanced_code.html"
+      }
+    },
+    {
+      "id": "bc71ff4e016740a49ffb5371f14f3d05",
+      "title": "Home - Enhanced",
+      "deviceType": "MOBILE",
+      "size": { "width": 780, "height": 3346 },
+      "hosted": {
+        "screenshotDownloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0ujOu3wv_-XMyzGjK1Qfc8_l8sT51TGbPde9uizqBdKJ1LIpBO11KSHZe6x_K7EQPLmzv34DHHrRM2kZ3YYyEssRy0JN8bc-t91TfwDmd_PpjFmIU0O2E3MCmL6_XQhLb3KEXtRGMSBo7l6mH_MU6ZFNo5IPiCduoQT8VtuiY8TiKTLRBul-bL8SlV8KQaQQZa1S6LRdak_pCbJ3IxL80ntOsv2uD8nEJHrKlcatDrZkW7uENcu109rfa9g",
+        "htmlCodeDownloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzRlNjY0YjFiODdhMjRkMmNiMWE2ZWRjODM1NWNlYjVmEgsSBxCy84aG7wsYAZIBIwoKcHJvamVjdF9pZBIVQhM4MDUxNjQ0NzQxMzA5MTcxODU1&filename=&opi=89354086"
+      },
+      "local": {
+        "folder": "stitch-export/8051644741309171855/home_enhanced",
+        "screenshotPath": "stitch-export/8051644741309171855/home_enhanced/home_enhanced_screenshot.png",
+        "codePath": "stitch-export/8051644741309171855/home_enhanced/home_enhanced_code.html"
+      }
+    },
+    {
+      "id": "d070da5b85e14ee6ba0d1af79ef0406d",
+      "title": "Shared Trip Overview",
+      "deviceType": "MOBILE",
+      "size": { "width": 780, "height": 3572 },
+      "hosted": {
+        "screenshotDownloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0ujBuuzVy4TcZdal5ZsDd8SuWvma1Ycs1Q7E95XbTiuSC9XPo5my7V6boUKrj6_h1YEYT-nTkZlzT1XNvpDTiPlOFVwsZy0XpcbMjEm6VJ9TZd80hnOq9ayoZzrqFCzDH5OjfkCcz5ULf3q9j5SAG5DFcXvzG3wZcDmTS5u1ArK2Dv8F4_MRsjJpdd4WZuuJlwtmC5lnzEihQw99CcPRMwIOG97cp0CUBTyQIqi6ba5DrD21LIF5ss4UEg",
+        "htmlCodeDownloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2UzMWIwMDcyNWY4ZDRlOWFiZTNkNGFmNDE5ZDM3MWQ1EgsSBxCy84aG7wsYAZIBIwoKcHJvamVjdF9pZBIVQhM4MDUxNjQ0NzQxMzA5MTcxODU1&filename=&opi=89354086"
+      },
+      "local": {
+        "folder": "stitch-export/8051644741309171855/shared_trip_overview",
+        "screenshotPath": "stitch-export/8051644741309171855/shared_trip_overview/shared_trip_overview_screenshot.png",
+        "codePath": "stitch-export/8051644741309171855/shared_trip_overview/shared_trip_overview_code.html"
+      }
+    },
+    {
+      "id": "aad7a58e8e9241fe9e8690f217796b22",
+      "title": "Inspiration - Animated",
+      "deviceType": "MOBILE",
+      "size": { "width": 780, "height": 7410 },
+      "hosted": {
+        "screenshotDownloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uiMtpflGm0v9O5Gtn1DSy9qwvNnN8B383hgwA4VeUkGQWeFSVLSjqiHIIFeAWEUrsfFVTZNufZ5N84LOUCAxINtQMxwsIpRYa-66OD_1OHsdk1HKoZVZJxDGZ073-a0zGU06EiNPu3RSpgcAjlBa0gC0qhAsckynmS7Z4hikdvaMTf0nLzwuJM_T4EMNQKuJriSQ-d0d3r8PC7HRUU8ADBtuLHfxr1lOCUBMaE8yZi1owYR4azXk1W6KyE",
+        "htmlCodeDownloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzIwYmMwNDc1MjNiMzQyOGFiNjQ0Y2M5ZTZlMTA3MTg1EgsSBxCy84aG7wsYAZIBIwoKcHJvamVjdF9pZBIVQhM4MDUxNjQ0NzQxMzA5MTcxODU1&filename=&opi=89354086"
+      },
+      "local": {
+        "folder": "stitch-export/8051644741309171855/inspiration_animated",
+        "screenshotPath": "stitch-export/8051644741309171855/inspiration_animated/inspiration_animated_screenshot.png",
+        "codePath": "stitch-export/8051644741309171855/inspiration_animated/inspiration_animated_code.html"
+      }
+    }
+  ]
+}
+

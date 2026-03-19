@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Minimalist Packing App - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&amp;family=Albert+Sans:wght@300;400&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#17cf91",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#11211c",
+                        "design-primary": "#2C3531",
+                        "design-bg": "#F9F8F6",
+                        "design-surface": "#FFFFFF",
+                        "design-text": "#1A1D1A",
+                        "design-muted": "#8D978F",
+                        "design-accent": "#D4C5B9",
+                        "design-border": "#E5E4E2",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Cormorant Garamond", "serif"],
+                        "body": ["Albert Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: var(--color-background, #F9F8F6);
+            color: var(--color-text, #1A1D1A);
+            font-family: 'Albert Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 500;
+        }
+        .border-thin {
+            border-bottom: 1px solid #E5E4E2;
+        }
+        .btn-primary {
+            background-color: #2C3531;
+            color: #FFFFFF;
+            font-family: 'Albert Sans', sans-serif;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-design-bg min-h-screen flex justify-center text-design-text">
+<!-- Mobile Container -->
+<div class="w-full max-w-md bg-design-bg min-h-screen relative flex flex-col shadow-sm">
+<!-- Hero Section -->
+<div class="relative w-full h-[400px] overflow-hidden">
+<img alt="Minimalist Suitcase" class="w-full h-full object-cover grayscale-[0.2] brightness-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxzaUdhzGFh6DraJVY65I3JpbufqTW_HqtwHwIJ76qzJAfw38GTdjDxr4e0cvDjOejp9k-PX0-TZmJYeB6HzmeT8E4t7HD9IXdTXyrI-gfWwiaghviHrDYR1r6T9xeWRXG1igtCaSaTNXd2PUdPozddnfA0QjMpaSyp0fYAgyWb6Ru22iIvYyqRghSbOEwgJCWV8NTC0qEQE_9tx5pgzrAJ5xcn8bl22LinnfzrC_AViPyKW7_Y4N-eLKiHCGKrzQKuRocfioqp7A"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent"></div>
+</div>
+<!-- Header -->
+<header class="pt-12 pb-8 px-6">
+<h1 class="text-[42px] text-design-text leading-tight tracking-tight">Your Journeys</h1>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto pb-[100px]">
+<!-- Featured Destination -->
+<section class="px-6 mb-12">
+<h2 class="font-body text-[12px] text-design-muted tracking-[0.2em] uppercase mb-4">Featured Destination</h2>
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden mb-4">
+<img alt="Kyoto Temple" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfTWWPe1WATEsIbvMuNLrp6c4N-nbrkTxiDbDRnCedxV4mmA5PhB9-bwy2hDBUeDzvn42ldfdTfNvyLK4hT_EkcPCyr-NpmI_GQVI2ZYeGEkDfPG3rt7nHPTVhxS5poqDewCGM4hPiJpdZeqcW6AXaEPMoeY_HZyYbg5yDf_fgHapkjR5N_3Le2rGY8M7J-vIutgM2uiYzUSoNDZTz7iXXWnbd_hNi4blPtiKVRY6fWOE1frNDSEKr8K2ssbHIcAKpTwIx6ApuyEs"/>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-serif text-[28px]">Kyoto, Japan</span>
+<span class="font-body text-[13px] border-b border-design-text pb-0.5">Explore Guide</span>
+</div>
+</div>
+</section>
+<!-- Trip List -->
+<div class="flex flex-col">
+<div class="px-6 mb-4">
+<h2 class="font-body text-[12px] text-design-muted tracking-[0.2em] uppercase">Upcoming Trips</h2>
+</div>
+<!-- Trip Card 1 -->
+<button class="w-full flex items-center justify-between px-6 py-6 bg-design-surface border-thin text-left hover:bg-design-bg/50 transition-colors">
+<div class="flex flex-col gap-1">
+<span class="font-serif text-[24px] text-design-text">Kyoto</span>
+<span class="font-body text-[15px] text-design-muted">Oct 12 - Oct 24</span>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="font-body text-[12px] text-design-text tracking-wider uppercase">45% Packed</span>
+<div class="w-16 h-[2px] bg-design-border relative">
+<div class="absolute top-0 left-0 h-full bg-design-accent" style="width: 45%;"></div>
+</div>
+</div>
+</button>
+<!-- Trip Card 2 -->
+<button class="w-full flex items-center justify-between px-6 py-6 bg-design-surface border-thin text-left hover:bg-design-bg/50 transition-colors">
+<div class="flex flex-col gap-1">
+<span class="font-serif text-[24px] text-design-text">Paris</span>
+<span class="font-body text-[15px] text-design-muted">Sep 1 - Sep 14</span>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="font-body text-[12px] text-design-muted tracking-wider uppercase">100% Packed</span>
+<div class="w-16 h-[2px] bg-design-border relative">
+<div class="absolute top-0 left-0 h-full bg-design-text" style="width: 100%;"></div>
+</div>
+</div>
+</button>
+<!-- Trip Card 3 -->
+<button class="w-full flex items-center justify-between px-6 py-6 bg-design-surface border-thin text-left hover:bg-design-bg/50 transition-colors">
+<div class="flex flex-col gap-1">
+<span class="font-serif text-[24px] text-design-text">Reykjavik</span>
+<span class="font-body text-[15px] text-design-muted">Dec 5 - Dec 12</span>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="font-body text-[12px] text-design-text tracking-wider uppercase">0% Packed</span>
+<div class="w-16 h-[2px] bg-design-border relative">
+<div class="absolute top-0 left-0 h-full bg-design-accent" style="width: 0%;"></div>
+</div>
+</div>
+</button>
+</div>
+</main>
+<!-- Sticky Bottom CTA -->
+<div class="sticky bottom-0 left-0 w-full p-6 bg-gradient-to-t from-design-bg via-design-bg to-transparent">
+<button class="w-full h-[56px] btn-primary flex items-center justify-center text-[14px] hover:opacity-90 transition-opacity">
+                Begin a Journey
+            </button>
+</div>
+</div>
+</body></html>

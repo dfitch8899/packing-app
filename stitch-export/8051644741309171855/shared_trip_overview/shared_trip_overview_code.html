@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#8D978F",
+              "secondary-fixed-dim": "#EBEAE8",
+              "outline": "#E5E4E2",
+              "tertiary": "#D4C5B9",
+              "surface-container-high": "#EBEAE8",
+              "on-tertiary": "#1A1D1A",
+              "on-secondary": "#FFFFFF",
+              "surface-variant": "#F2F1EF",
+              "inverse-primary": "#F9F8F6",
+              "on-surface": "#1A1D1A",
+              "on-tertiary-fixed-variant": "#D4C5B9",
+              "tertiary-dim": "#49583a",
+              "on-secondary-fixed": "#1A1D1A",
+              "primary-container": "#D4C5B9",
+              "tertiary-container": "#F2F1EF",
+              "on-primary-container": "#1A1D1A",
+              "on-primary-fixed": "#1A1D1A",
+              "secondary-dim": "#505452",
+              "primary-dim": "#4b5450",
+              "on-primary-fixed-variant": "#2C3531",
+              "surface-dim": "#E5E4E2",
+              "on-tertiary-container": "#2C3531",
+              "surface": "#F9F8F6",
+              "surface-container-low": "#F9F8F6",
+              "surface-container-highest": "#E5E4E2",
+              "primary": "#2C3531",
+              "secondary-container": "#E5E4E2",
+              "inverse-surface": "#2C3531",
+              "surface-container": "#F2F1EF",
+              "secondary": "#8D978F",
+              "on-primary": "#FFFFFF",
+              "primary-fixed-dim": "#D4C5B9",
+              "on-background": "#1A1D1A",
+              "outline-variant": "#D4C5B9",
+              "on-error-container": "#410002",
+              "on-secondary-container": "#1A1D1A",
+              "tertiary-fixed": "#F9F8F6",
+              "error-dim": "#4e0309",
+              "primary-fixed": "#E5E4E2",
+              "surface-tint": "#2C3531",
+              "inverse-on-surface": "#F9F8F6",
+              "error-container": "#FFDAD6",
+              "on-tertiary-fixed": "#1A1D1A",
+              "tertiary-fixed-dim": "#F2F1EF",
+              "surface-container-lowest": "#FFFFFF",
+              "background": "#F9F8F6",
+              "on-error": "#FFFFFF",
+              "error": "#BA1A1A",
+              "secondary-fixed": "#F2F1EF",
+              "surface-bright": "#FFFFFF",
+              "on-surface-variant": "#8D978F"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-title { font-family: 'Newsreader', serif; }
+        .sans-label { font-family: 'Plus Jakarta Sans', sans-serif; }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #D4C5B9; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary/30">
+<!-- Top Navigation Bar -->
+<nav class="w-full top-0 sticky bg-[#F9F8F6] dark:bg-stone-900 border-b border-stone-200/50 dark:border-stone-800/50 z-50">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#2C3531] dark:text-stone-100 active:opacity-70 transition-opacity p-2 hover:bg-stone-100 dark:hover:bg-stone-800" data-icon="arrow_back">arrow_back</button>
+<h1 class="font-serif text-2xl tracking-tight text-[#2C3531] dark:text-stone-100">Packing List</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#2C3531] dark:text-white font-semibold sans-label text-xs tracking-widest uppercase" href="#">Overview</a>
+<a class="text-[#2C3531]/60 dark:text-stone-400 sans-label text-xs tracking-widest uppercase hover:text-[#D4C5B9] transition-colors" href="#">Documents</a>
+<a class="text-[#2C3531]/60 dark:text-stone-400 sans-label text-xs tracking-widest uppercase hover:text-[#D4C5B9] transition-colors" href="#">Itinerary</a>
+</div>
+<button class="material-symbols-outlined text-[#2C3531] dark:text-stone-100 p-2 hover:bg-stone-100 dark:hover:bg-stone-800" data-icon="more_vert">more_vert</button>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto pb-32">
+<!-- Hero Header -->
+<header class="relative h-[300px] w-full overflow-hidden mb-12">
+<img class="w-full h-full object-cover grayscale-[20%] brightness-[85%]" data-alt="Misty landscape of rolling hills and travel essentials" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk-0cZNmIhD6rcW0GoYDAjUfWi4y7Q5-E0mfD2z_GvNpCy_AH1o9QDg6Fo3XE9i_dd3ZO1HOWo9Gk6XDuCSjS5YLk7UAGVtkG47oMoGXZ8Zlc2wU6YWstdRyAYuEt7fZ7yD6QhFHICXDYHqeafEhivNRU0SaftSqifbGq_Is50XchwKxiHCKZVZ9cixZ4PqHUvkPNl-WCt-ruKDmZTIfPtSM3orai3OQfd7RpmCAcS1PbxZQV31l-6dgf7dG9g_-qzxXzbDYmkhKI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>
+<div class="absolute bottom-10 left-6 lg:left-12">
+<span class="text-xs font-label tracking-[0.2em] uppercase text-on-surface/70 mb-2 block">Group Expedition</span>
+<h2 class="text-5xl md:text-6xl font-headline tracking-tighter text-primary">Tuscany Retreat 2024</h2>
+</div>
+</header>
+<div class="px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Participants Status -->
+<section class="lg:col-span-7">
+<div class="flex items-baseline justify-between mb-8 border-b border-outline/50 pb-4">
+<h3 class="text-2xl font-headline text-primary">Participant Readiness</h3>
+<span class="text-[10px] font-label tracking-widest uppercase text-secondary">4 Travelers</span>
+</div>
+<div class="space-y-10">
+<!-- Alice -->
+<div class="group">
+<div class="flex justify-between items-end mb-3">
+<div>
+<h4 class="text-lg font-headline">Alice</h4>
+<p class="text-[10px] font-label tracking-widest uppercase text-secondary">Lead Coordinator</p>
+</div>
+<span class="text-xs font-label text-primary">100% PACKED</span>
+</div>
+<div class="h-[2px] w-full bg-outline">
+<div class="h-full bg-primary w-full transition-all duration-1000"></div>
+</div>
+</div>
+<!-- Bob -->
+<div class="group">
+<div class="flex justify-between items-end mb-3">
+<div>
+<h4 class="text-lg font-headline">Bob</h4>
+<p class="text-[10px] font-label tracking-widest uppercase text-secondary">Photography</p>
+</div>
+<span class="text-xs font-label text-primary">20% PACKED</span>
+</div>
+<div class="h-[2px] w-full bg-outline">
+<div class="h-full bg-tertiary w-[20%] transition-all duration-1000"></div>
+</div>
+</div>
+<!-- Clara -->
+<div class="group">
+<div class="flex justify-between items-end mb-3">
+<div>
+<h4 class="text-lg font-headline">Clara</h4>
+<p class="text-[10px] font-label tracking-widest uppercase text-secondary">Logistics</p>
+</div>
+<span class="text-xs font-label text-primary">65% PACKED</span>
+</div>
+<div class="h-[2px] w-full bg-outline">
+<div class="h-full bg-tertiary w-[65%] transition-all duration-1000"></div>
+</div>
+</div>
+<!-- David -->
+<div class="group">
+<div class="flex justify-between items-end mb-3">
+<div>
+<h4 class="text-lg font-headline">David</h4>
+<p class="text-[10px] font-label tracking-widest uppercase text-secondary">Culinary Lead</p>
+</div>
+<span class="text-xs font-label text-primary">0% PACKED</span>
+</div>
+<div class="h-[2px] w-full bg-outline">
+<div class="h-full bg-tertiary w-0"></div>
+</div>
+</div>
+</div>
+<div class="mt-16 flex flex-col md:flex-row gap-4">
+<button class="bg-primary text-white font-label text-xs tracking-[0.2em] uppercase px-10 py-5 transition-all hover:bg-on-tertiary-container active:scale-95 flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-sm" data-icon="chat_bubble">chat_bubble</span>
+                        Message Group
+                    </button>
+<button class="border border-primary text-primary font-label text-xs tracking-[0.2em] uppercase px-10 py-5 transition-all hover:bg-surface-container active:scale-95">
+                        Send Reminder
+                    </button>
+</div>
+</section>
+<!-- Right Column: Common Items -->
+<aside class="lg:col-span-5">
+<div class="bg-surface-bright p-8 lg:p-12 border border-outline/30 shadow-sm">
+<h3 class="text-2xl font-headline text-primary mb-8 border-b border-outline/50 pb-4">Common Items</h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4 group">
+<span class="material-symbols-outlined text-tertiary mt-1" data-icon="medical_services">medical_services</span>
+<div class="flex-1 border-b border-outline/30 pb-4">
+<p class="text-sm font-label uppercase tracking-widest text-primary mb-1">First Aid Kit</p>
+<div class="flex justify-between items-center">
+<p class="text-xs text-secondary italic">Assigned to: Alice</p>
+<span class="text-[10px] px-2 py-1 bg-surface-container-highest text-primary font-bold">READY</span>
+</div>
+</div>
+</li>
+<li class="flex items-start gap-4 group">
+<span class="material-symbols-outlined text-tertiary mt-1" data-icon="power">power</span>
+<div class="flex-1 border-b border-outline/30 pb-4">
+<p class="text-sm font-label uppercase tracking-widest text-primary mb-1">Universal Adapters (3)</p>
+<div class="flex justify-between items-center">
+<p class="text-xs text-secondary italic">Assigned to: David</p>
+<span class="text-[10px] px-2 py-1 border border-outline text-secondary">PENDING</span>
+</div>
+</div>
+</li>
+<li class="flex items-start gap-4 group">
+<span class="material-symbols-outlined text-tertiary mt-1" data-icon="menu_book">menu_book</span>
+<div class="flex-1 border-b border-outline/30 pb-4">
+<p class="text-sm font-label uppercase tracking-widest text-primary mb-1">Physical Maps &amp; Guide</p>
+<div class="flex justify-between items-center">
+<p class="text-xs text-secondary italic">Assigned to: Clara</p>
+<span class="text-[10px] px-2 py-1 bg-surface-container-highest text-primary font-bold">READY</span>
+</div>
+</div>
+</li>
+<li class="flex items-start gap-4 group">
+<span class="material-symbols-outlined text-tertiary mt-1" data-icon="flashlight_on">flashlight_on</span>
+<div class="flex-1 pb-4">
+<p class="text-sm font-label uppercase tracking-widest text-primary mb-1">High-Lumen Flashlight</p>
+<div class="flex justify-between items-center">
+<p class="text-xs text-secondary italic">Unassigned</p>
+<button class="text-[10px] font-bold text-tertiary-dim hover:underline tracking-tighter">CLAIM ITEM</button>
+</div>
+</div>
+</li>
+</ul>
+<button class="w-full mt-10 py-4 border-t border-outline/50 flex items-center justify-center gap-2 text-secondary hover:text-primary transition-colors font-label text-[10px] tracking-widest uppercase">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                        Add Shared Requirement
+                    </button>
+</div>
+</aside>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-12 z-50 pb-8 pt-12 bg-gradient-to-t from-[#F9F8F6] via-[#F9F8F6] to-transparent dark:from-stone-900">
+<a class="flex flex-col items-center justify-center bg-[#2C3531] text-white dark:bg-stone-100 dark:text-stone-900 rounded-none p-4 scale-95 duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2C3531] dark:text-stone-400 p-4 hover:text-[#D4C5B9] transition-colors scale-95 duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2C3531] dark:text-stone-400 p-4 hover:text-[#D4C5B9] transition-colors scale-95 duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</a>
+</nav>
+</body></html>
