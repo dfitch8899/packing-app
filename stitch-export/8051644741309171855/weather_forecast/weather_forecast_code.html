@@ -112,10 +112,10 @@
 <button class="active:opacity-70 transition-opacity hover:bg-stone-100 dark:hover:bg-stone-800 p-2">
 <span class="material-symbols-outlined text-[#2C3531] dark:text-stone-100" data-icon="arrow_back">arrow_back</span>
 </button>
-<h1 class="font-headline text-2xl tracking-tight text-[#2C3531] dark:text-stone-100">Kyoto Forecast</h1>
+<h1 id="packingapp-weatherHeaderTitle" class="font-headline text-2xl tracking-tight text-[#2C3531] dark:text-stone-100">Kyoto Forecast</h1>
 </div>
 <div class="flex items-center gap-6">
-<span class="font-label text-xs tracking-widest uppercase text-[#2C3531]/60">OCT 12 — 24</span>
+<span id="packingapp-weatherDateRange" class="font-label text-xs tracking-widest uppercase text-[#2C3531]/60">OCT 12 — 24</span>
 <span class="material-symbols-outlined text-[#2C3531]" data-icon="more_vert">more_vert</span>
 </div>
 </div>
@@ -124,15 +124,15 @@
 <!-- Hero: Kyoto Atmosphere -->
 <section class="mb-16">
 <div class="relative h-[400px] overflow-hidden group">
-<img alt="Kyoto Temple in soft morning mist" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Kyoto temple in soft morning mist and light rain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuART7d-N6N4UgruIKvhgXMxfPgSG0Zypcg4JwWN4oJVoqqoV2kpBRigzklTnnlZjY5lFw7PiYAUOn2K_nDKN2VlZg8dZnOowW8NGJ7Kqb_CkRueco0Hvnv2LiVh8e35gJXffhsnK41p0rJisI_qve6FG_aa0N_vMVU_qW3j8dV_c20xiHc20YO8rz79nZA-bJbnyD0sb9IURgQxvknn4ejD0KmsGmzMUJEH8M4FbyY5R6AKp70DQiq23FT5CLGnJT0S2hbAyIZFHr8"/>
+<img id="packingapp-weatherHeroImage" alt="Kyoto Temple in soft morning mist" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Kyoto temple in soft morning mist and light rain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuART7d-N6N4UgruIKvhgXMxfPgSG0Zypcg4JwWN4oJVoqqoV2kpBRigzklTnnlZjY5lFw7PiYAUOn2K_nDKN2VlZg8dZnOowW8NGJ7Kqb_CkRueco0Hvnv2LiVh8e35gJXffhsnK41p0rJisI_qve6FG_aa0N_vMVU_qW3j8dV_c20xiHc20YO8rz79nZA-bJbnyD0sb9IURgQxvknn4ejD0KmsGmzMUJEH8M4FbyY5R6AKp70DQiq23FT5CLGnJT0S2hbAyIZFHr8"/>
 <div class="absolute inset-0 bg-gradient-to-t from-[#2C3531]/60 to-transparent"></div>
 <div class="absolute bottom-10 left-10 text-white">
 <p class="font-label text-xs tracking-[0.2em] uppercase mb-2 opacity-80">Current Conditions</p>
 <div class="flex items-end gap-4">
-<h2 class="font-headline text-7xl font-light">19°</h2>
+<h2 id="packingapp-currentTemperature" class="font-headline text-7xl font-light">19°</h2>
 <div class="pb-2">
-<p class="font-headline text-2xl italic">Partly Cloudy</p>
-<p class="text-sm opacity-80">Humidity 64% • NW 12 km/h</p>
+<p id="packingapp-currentSummary" class="font-headline text-2xl italic">Partly Cloudy</p>
+<p id="packingapp-currentHumidity" class="text-sm opacity-80">Humidity 64% • NW 12 km/h</p>
 </div>
 </div>
 </div>
@@ -145,7 +145,7 @@
 <h3 class="font-headline text-3xl">Seven-Day Outlook</h3>
 <p class="font-label text-[10px] tracking-[0.3em] uppercase text-on-surface-variant">Metric Units (C°)</p>
 </div>
-<div class="space-y-1">
+<div id="packingapp-weatherDaysList" class="space-y-1">
 <!-- Day Rows -->
 <div class="group flex items-center justify-between py-6 border-b border-outline hover:bg-surface-bright transition-colors px-4">
 <div class="w-32">
@@ -246,7 +246,7 @@
 <h3 class="font-headline text-2xl mb-2">Packing Strategy</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed">Based on the forecast for Oct 12-24, your Kyoto journey will be defined by transition and humidity.</p>
 </div>
-<div class="space-y-6">
+<div id="packingapp-packingStrategyBlocks" class="space-y-6">
 <div class="flex gap-4">
 <div class="w-10 h-10 bg-primary text-white flex items-center justify-center shrink-0">
 <span class="material-symbols-outlined" data-icon="umbrella">umbrella</span>
@@ -277,7 +277,7 @@
 </div>
 <div class="pt-6 border-t border-outline-variant">
 <h4 class="font-headline text-lg mb-4 italic">Recommended Items</h4>
-<div class="flex flex-wrap gap-2">
+<div id="packingapp-recommendedItems" class="flex flex-wrap gap-2">
 <span class="px-3 py-1 bg-surface-bright text-[10px] uppercase tracking-widest border border-outline">Linen Shell</span>
 <span class="px-3 py-1 bg-surface-bright text-[10px] uppercase tracking-widest border border-outline">Gore-Tex Trail</span>
 <span class="px-3 py-1 bg-surface-bright text-[10px] uppercase tracking-widest border border-outline">Merino Socks</span>
@@ -310,4 +310,9 @@
 </button>
 </div>
 </nav>
+<script src="../uiContract.js"></script>
+<script src="../storage.js"></script>
+<script src="../mockApi.js"></script>
+<script src="../apiClient.js"></script>
+<script src="../appBootstrap.js"></script>
 </body></html>

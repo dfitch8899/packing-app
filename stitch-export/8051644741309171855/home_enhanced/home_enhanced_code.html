@@ -89,11 +89,11 @@
 <h2 class="font-body text-[12px] text-design-muted tracking-[0.2em] uppercase mb-4">Featured Destination</h2>
 <div class="group cursor-pointer">
 <div class="relative aspect-[4/5] overflow-hidden mb-4">
-<img alt="Kyoto Temple" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfTWWPe1WATEsIbvMuNLrp6c4N-nbrkTxiDbDRnCedxV4mmA5PhB9-bwy2hDBUeDzvn42ldfdTfNvyLK4hT_EkcPCyr-NpmI_GQVI2ZYeGEkDfPG3rt7nHPTVhxS5poqDewCGM4hPiJpdZeqcW6AXaEPMoeY_HZyYbg5yDf_fgHapkjR5N_3Le2rGY8M7J-vIutgM2uiYzUSoNDZTz7iXXWnbd_hNi4blPtiKVRY6fWOE1frNDSEKr8K2ssbHIcAKpTwIx6ApuyEs"/>
+<img id="packingapp-featuredDestinationImage" alt="Kyoto Temple" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfTWWPe1WATEsIbvMuNLrp6c4N-nbrkTxiDbDRnCedxV4mmA5PhB9-bwy2hDBUeDzvn42ldfdTfNvyLK4hT_EkcPCyr-NpmI_GQVI2ZYeGEkDfPG3rt7nHPTVhxS5poqDewCGM4hPiJpdZeqcW6AXaEPMoeY_HZyYbg5yDf_fgHapkjR5N_3Le2rGY8M7J-vIutgM2uiYzUSoNDZTz7iXXWnbd_hNi4blPtiKVRY6fWOE1frNDSEKr8K2ssbHIcAKpTwIx6ApuyEs"/>
 </div>
 <div class="flex justify-between items-baseline">
-<span class="font-serif text-[28px]">Kyoto, Japan</span>
-<span class="font-body text-[13px] border-b border-design-text pb-0.5">Explore Guide</span>
+<span id="packingapp-featuredDestinationTitle" class="font-serif text-[28px]">Kyoto, Japan</span>
+<span id="packingapp-featuredDestinationSubtitle" class="font-body text-[13px] border-b border-design-text pb-0.5">Explore Guide</span>
 </div>
 </div>
 </section>
@@ -102,6 +102,7 @@
 <div class="px-6 mb-4">
 <h2 class="font-body text-[12px] text-design-muted tracking-[0.2em] uppercase">Upcoming Trips</h2>
 </div>
+<div id="packingapp-tripList">
 <!-- Trip Card 1 -->
 <button class="w-full flex items-center justify-between px-6 py-6 bg-design-surface border-thin text-left hover:bg-design-bg/50 transition-colors">
 <div class="flex flex-col gap-1">
@@ -142,12 +143,18 @@
 </div>
 </button>
 </div>
+</div>
 </main>
 <!-- Sticky Bottom CTA -->
 <div class="sticky bottom-0 left-0 w-full p-6 bg-gradient-to-t from-design-bg via-design-bg to-transparent">
-<button class="w-full h-[56px] btn-primary flex items-center justify-center text-[14px] hover:opacity-90 transition-opacity">
+<button id="packingapp-beginJourneyBtn" class="w-full h-[56px] btn-primary flex items-center justify-center text-[14px] hover:opacity-90 transition-opacity">
                 Begin a Journey
             </button>
 </div>
 </div>
+<script src="../uiContract.js"></script>
+<script src="../storage.js"></script>
+<script src="../mockApi.js"></script>
+<script src="../apiClient.js"></script>
+<script src="../appBootstrap.js"></script>
 </body></html>

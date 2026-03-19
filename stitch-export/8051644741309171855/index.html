@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Packing App Prototype (Stitch Export)</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background: #f9f8f6;
+        color: #1a1d1a;
+        margin: 0;
+        padding: 40px 20px;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      p {
+        margin: 0 0 18px;
+        line-height: 1.5;
+        opacity: 0.95;
+      }
+      ul {
+        padding-left: 18px;
+        margin: 12px 0 18px;
+      }
+      li {
+        margin: 8px 0;
+      }
+      a {
+        color: #2c3531;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(44, 53, 49, 0.25);
+      }
+      a:hover {
+        border-bottom-color: rgba(44, 53, 49, 0.6);
+      }
+      .hint {
+        margin-top: 18px;
+        font-size: 13px;
+        opacity: 0.85;
+      }
+      .tag {
+        display: inline-block;
+        padding: 3px 8px;
+        border: 1px solid rgba(44, 53, 49, 0.18);
+        border-radius: 9999px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Packing App Prototype</h1>
+      <p>
+        Quick entrypoint for the Stitch export screens. These pages are static HTML that load shared JS
+        from <code>uiContract.js</code>, <code>storage.js</code>, <code>mockApi.js</code>, and <code>appBootstrap.js</code>.
+      </p>
+
+      <p>
+        Pick a screen:
+        <span class="tag">static</span>
+      </p>
+
+      <ul>
+        <li>
+          <a href="./home_enhanced/home_enhanced_code.html">Home</a>
+        </li>
+        <li>
+          <a href="./checklist_enhanced/checklist_enhanced_code.html">Checklist</a>
+        </li>
+        <li>
+          <a href="./weather_forecast/weather_forecast_code.html">Weather Forecast</a>
+        </li>
+        <li>
+          <a href="./shared_trip_overview/shared_trip_overview_code.html">Shared Trip Overview</a>
+        </li>
+        <li>
+          <a href="./inspiration/inspiration_code.html">Inspiration</a>
+        </li>
+        <li>
+          <a href="./inspiration_animated/inspiration_animated_code.html">Inspiration (Animated)</a>
+        </li>
+      </ul>
+
+      <div class="hint">
+        Tip: the app uses <code>localStorage</code> to remember the selected trip and packed checklist state.
+        If something looks “stuck”, reload the page or clear site data.
+      </div>
+    </div>
+  </body>
+</html>
+
